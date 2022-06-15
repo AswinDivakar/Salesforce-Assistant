@@ -920,7 +920,6 @@ class AllDataSelection extends React.PureComponent {
   getObjectSetupLink(sobjectName) {
     return "https://" + this.props.sfHost + "/lightning/setup/ObjectManager/" + sobjectName + "/FieldsAndRelationships/view";
   }
-
   render() {
     let {sfHost, showDetailsSupported, contextRecordId, selectedValue, linkTarget, recordIdDetails} = this.props;
     // Show buttons for the available APIs.
@@ -930,7 +929,6 @@ class AllDataSelection extends React.PureComponent {
       // If none of the APIs are available, show a button for the regular API, which will partly fail, but still show some useful metadata from the tooling API.
       buttons.push("noApi");
     }
-
     return (
       h("div", {className: "all-data-box-inner"},
         h("div", {className: "all-data-box-data"},
